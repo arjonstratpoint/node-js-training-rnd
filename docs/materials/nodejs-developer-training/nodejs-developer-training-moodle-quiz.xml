@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Node.js Developer Training — Nuance Quiz — Moodle XML import format
+  Purpose: Course-wide self-check spanning all 10 modules (2 questions each) — verifies close
+           reading of each module's resolved decisions and definitions of done, not general
+           knowledge recall.
+  Formative only: not one of the program's four Friday gates (those are checklists, not exams)
+           and not scored toward the capstone rubric.
+  Questions: 20 | Attempts: single attempt | Style: tricky/nuance-based (plausible near-miss
+           distractors)
+  Source: modules/m01-m10/*/brief.md (as of this quiz's generation)
+-->
+<quiz>
+
+<question type="category">
+  <category><text>$course$/Node.js Developer Training — Nuance Quiz</text></category>
+</question>
+
+<!-- ============================================================ -->
+<!-- SECTION 1: WEEK 1 — FOUNDATIONS (M01-M03, 6 questions)        -->
+<!-- ============================================================ -->
+
+<question type="multichoice">
+  <name><text>N01 — M01: Repo Visibility</text></name>
+  <questiontext format="html"><text><![CDATA[<p>What is this program's resolved convention for every trainee's repo?</p>]]></text></questiontext>
+  <answer fraction="100"><text>Public training repo, for every module</text></answer>
+  <answer fraction="0"><text>Private repo with a "no direct pushes to main" convention</text></answer>
+  <answer fraction="0"><text>Private repo with branch protection enabled</text></answer>
+  <answer fraction="0"><text>Local-only repo, pushed to GitHub only at the capstone</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<question type="multichoice">
+  <name><text>N02 — M01: Commit Threshold</text></name>
+  <questiontext format="html"><text><![CDATA[<p>How many Conventional Commits does the M01 Definition of done require, at minimum, on the merged PR?</p>]]></text></questiontext>
+  <answer fraction="100"><text>3</text></answer>
+  <answer fraction="0"><text>1</text></answer>
+  <answer fraction="0"><text>5</text></answer>
+  <answer fraction="0"><text>Not specified — any number is fine</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<question type="multichoice">
+  <name><text>N03 — M02: Timing Exercise API</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which public API is resolved for the M02 sequential-vs-parallel timing comparison?</p>]]></text></questiontext>
+  <answer fraction="100"><text>JSONPlaceholder</text></answer>
+  <answer fraction="0"><text>Whichever free API the trainee prefers</text></answer>
+  <answer fraction="0"><text>A free weather API</text></answer>
+  <answer fraction="0"><text>JSONBin</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<question type="multichoice">
+  <name><text>N04 — M02: Output-Order Check</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Besides the passing self-checks, what does M02's Definition of done require a trainee to be able to do?</p>]]></text></questiontext>
+  <answer fraction="100"><text>Predict and explain, out loud, the output order of a snippet mixing setTimeout, promises, and await</text></answer>
+  <answer fraction="0"><text>Pass a Jest test asserting the exact output order</text></answer>
+  <answer fraction="0"><text>Write a blog post explaining the event loop</text></answer>
+  <answer fraction="0"><text>Implement a custom microtask queue</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<question type="multichoice">
+  <name><text>N05 — M03: Log File Spec</text></name>
+  <questiontext format="html"><text><![CDATA[<p>What is the resolved input file for the <code>log-report</code> CLI lab?</p>]]></text></questiontext>
+  <answer fraction="100"><text>A synthetic, ~100MB, newline-delimited log file, provided by the trainer</text></answer>
+  <answer fraction="0"><text>A real production log file the trainee sources online</text></answer>
+  <answer fraction="0"><text>Any CSV file under 1MB</text></answer>
+  <answer fraction="0"><text>A file the trainee must generate from scratch, with no size specified</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<question type="multichoice">
+  <name><text>N06 — M03: Streaming Requirement</text></name>
+  <questiontext format="html"><text><![CDATA[<p>What must the <code>log-report</code> CLI actually do, per the M03 Definition of done?</p>]]></text></questiontext>
+  <answer fraction="100"><text>Genuinely stream the file rather than loading it fully into memory first</text></answer>
+  <answer fraction="0"><text>Convert the file to JSON before processing it</text></answer>
+  <answer fraction="0"><text>Store the file in a database before aggregating counts</text></answer>
+  <answer fraction="0"><text>Parse the file using only regular expressions</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<!-- ============================================================ -->
+<!-- SECTION 2: WEEK 2 — TYPED API (M04-M05, 4 questions)          -->
+<!-- ============================================================ -->
+
+<question type="multichoice">
+  <name><text>N07 — M04: Pinned Node Version</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which Node.js version does this cohort actually run, as resolved in M04?</p>]]></text></questiontext>
+  <answer fraction="100"><text>Node 24 LTS</text></answer>
+  <answer fraction="0"><text>Node 26, for stable native type stripping</text></answer>
+  <answer fraction="0"><text>Node 22 LTS</text></answer>
+  <answer fraction="0"><text>Whichever version is newest when the cohort starts</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<question type="multichoice">
+  <name><text>N08 — M04: Native Type Stripping</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Per M04's Definition of done, is native type stripping a hard pass/fail requirement on this cohort's pinned Node version?</p>]]></text></questiontext>
+  <answer fraction="100"><text>No — it's attempted and documented, but awareness-level only; full stability needs Node 26</text></answer>
+  <answer fraction="0"><text>Yes — the toolkit must run under native type stripping to pass</text></answer>
+  <answer fraction="0"><text>Yes, but only for the Result&lt;T, E&gt; type</text></answer>
+  <answer fraction="0"><text>It's only required in the M10 capstone, not M04</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<question type="multichoice">
+  <name><text>N09 — M05: Task API Scope</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which fields does the Task resource actually expose through the API in M05-M09?</p>]]></text></questiontext>
+  <answer fraction="100"><text><code>id</code>, <code>title</code>, <code>description</code> (optional), <code>status</code></text></answer>
+  <answer fraction="0"><text><code>id</code>, <code>title</code>, <code>description</code>, <code>status</code>, <code>dueDate</code>, <code>priority</code>, and nested <code>tags</code>, all at once</text></answer>
+  <answer fraction="0"><text><code>id</code> and <code>title</code> only</text></answer>
+  <answer fraction="0"><text>Full <code>user</code> and <code>tag</code> relations, exposed via their own dedicated routes</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<question type="multichoice">
+  <name><text>N10 — M05: Users/Tags Routes</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Do <code>/api/v1/users</code> or <code>/api/v1/tags</code> get their own routes anywhere in this program?</p>]]></text></questiontext>
+  <answer fraction="100"><text>No — both stay schema-only until Prisma (M07); tags become a nested field on the task endpoints, never a top-level route</text></answer>
+  <answer fraction="0"><text>Yes, both get full CRUD routes starting in M05</text></answer>
+  <answer fraction="0"><text>Only <code>/api/v1/users</code> gets routes</text></answer>
+  <answer fraction="0"><text>Only <code>/api/v1/tags</code> gets routes</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<!-- ============================================================ -->
+<!-- SECTION 3: WEEK 3 — DATA & VALIDATION (M06-M08, 6 questions)  -->
+<!-- ============================================================ -->
+
+<question type="multichoice">
+  <name><text>N11 — M06: Exercise Source</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Where do the 20+ graded SQL query exercises in M06 come from?</p>]]></text></questiontext>
+  <answer fraction="100"><text>The trainee writes their own, against their own schema — there's no shared exercise bank</text></answer>
+  <answer fraction="0"><text>A shared exercise bank committed in this repo</text></answer>
+  <answer fraction="0"><text>The trainer's private answer key, handed out at the checkpoint</text></answer>
+  <answer fraction="0"><text>An auto-generated set produced by a script</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<question type="multichoice">
+  <name><text>N12 — M06: Transactions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Is writing a SQL transaction a mandatory, graded exercise in M06?</p>]]></text></questiontext>
+  <answer fraction="100"><text>No exercise forces it, but the trainee is encouraged to try one anyway — it's required for real later, in the M10 capstone</text></answer>
+  <answer fraction="0"><text>Yes, with a specific pass threshold on the transaction exercise</text></answer>
+  <answer fraction="0"><text>Transactions aren't covered until M07</text></answer>
+  <answer fraction="0"><text>Transactions are M10-only material, never mentioned in M06</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<question type="multichoice">
+  <name><text>N13 — M07: Prisma Version Pin</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which Prisma version must be installed and invoked, always, throughout this program?</p>]]></text></questiontext>
+  <answer fraction="100"><text><code>@7</code> — never a bare or unversioned install</text></answer>
+  <answer fraction="0"><text>Whatever an unversioned <code>npx prisma</code> resolves to</text></answer>
+  <answer fraction="0"><text>Prisma 8, once it reaches general availability</text></answer>
+  <answer fraction="0"><text>Prisma 6, for maximum stability</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<question type="multichoice">
+  <name><text>N14 — M07: Error Mapping Location</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Where does M07 require Prisma's <code>P2002</code>/<code>P2025</code>/<code>P2003</code> error codes to be mapped?</p>]]></text></questiontext>
+  <answer fraction="100"><text>Into the existing M05 central error handler — not a new one</text></answer>
+  <answer fraction="0"><text>Into a brand-new, M07-specific error handler</text></answer>
+  <answer fraction="0"><text>Directly inside each route handler, case by case</text></answer>
+  <answer fraction="0"><text>They're left unmapped and returned as raw Prisma errors</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<question type="multichoice">
+  <name><text>N15 — M08: Envelope Stability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>When Zod validation errors are added in M08, what happens to the error envelope's shape fixed back in M05?</p>]]></text></questiontext>
+  <answer fraction="100"><text>Nothing — the shape doesn't change; Zod's error output just maps into the existing <code>details</code> array</text></answer>
+  <answer fraction="0"><text>A new <code>zodErrors</code> field is added alongside <code>details</code></text></answer>
+  <answer fraction="0"><text>The envelope is redesigned specifically for M08</text></answer>
+  <answer fraction="0"><text><code>code</code> becomes optional once Zod is introduced</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<question type="multichoice">
+  <name><text>N16 — M08: What Must Disappear</text></name>
+  <questiontext format="html"><text><![CDATA[<p>What must not remain anywhere in the codebase after M08 is complete?</p>]]></text></questiontext>
+  <answer fraction="100"><text>Any manual <code>if (!body.title)</code>-style validation check</text></answer>
+  <answer fraction="0"><text>Any Zod schema</text></answer>
+  <answer fraction="0"><text>Any TypeScript interface</text></answer>
+  <answer fraction="0"><text>Any environment variable</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<!-- ============================================================ -->
+<!-- SECTION 4: WEEK 4 — TESTING & CAPSTONE (M09-M10, 4 questions) -->
+<!-- ============================================================ -->
+
+<question type="multichoice">
+  <name><text>N17 — M09: Toolchain Fallback Order</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If <code>@swc/jest</code> doesn't cooperate with the Prisma-generated client in ESM mode, what is the resolved fallback order?</p>]]></text></questiontext>
+  <answer fraction="100"><text>ts-jest (TS7 setup) → pin TypeScript 6 for tests only → compile as CommonJS</text></answer>
+  <answer fraction="0"><text>Compile as CommonJS → pin TypeScript 6 → ts-jest</text></answer>
+  <answer fraction="0"><text>Switch immediately to Mocha instead of Jest</text></answer>
+  <answer fraction="0"><text>Disable ESM across the whole project right away</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<question type="multichoice">
+  <name><text>N18 — M09: Ordering Requirement</text></name>
+  <questiontext format="html"><text><![CDATA[<p>What must be true of the Task API v4 test suite, per M09's Definition of done?</p>]]></text></questiontext>
+  <answer fraction="100"><text>It passes in random order via <code>--randomize</code></text></answer>
+  <answer fraction="0"><text>It passes only with <code>--runInBand</code>, with no randomize check required</text></answer>
+  <answer fraction="0"><text>It must finish running in under 10 seconds</text></answer>
+  <answer fraction="0"><text>It must use snapshot testing exclusively</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<question type="multichoice">
+  <name><text>N19 — M10: Transaction Proof</text></name>
+  <questiontext format="html"><text><![CDATA[<p>What does the capstone rubric's Functionality row require to credit the business-rule transaction, beyond it existing in the code?</p>]]></text></questiontext>
+  <answer fraction="100"><text>It must be demonstrated under concurrent load — a script firing parallel requests at the contested resource, proving the race is actually prevented</text></answer>
+  <answer fraction="0"><text>A passing unit test that mocks the database layer</text></answer>
+  <answer fraction="0"><text>A code comment explaining how the transaction works</text></answer>
+  <answer fraction="0"><text>Nothing further — the transaction existing in the service layer is sufficient</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+<question type="multichoice">
+  <name><text>N20 — M10: Gate Remediation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Under the program's default remediation policy, how long does a trainee get to close a gap after failing a Friday gate (M03/M05/M08), before re-demonstrating?</p>]]></text></questiontext>
+  <answer fraction="100"><text>One business day</text></answer>
+  <answer fraction="0"><text>Three business days</text></answer>
+  <answer fraction="0"><text>One full week</text></answer>
+  <answer fraction="0"><text>Until the next Friday gate, whenever that falls</text></answer>
+  <shuffleanswers>1</shuffleanswers>
+  <single>true</single>
+  <defaultgrade>1</defaultgrade>
+</question>
+
+</quiz>

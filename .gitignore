@@ -1,0 +1,12 @@
+.DS_Store
+.claude/
+.vscode/
+
+graphify-out/
+
+node_modules/
+dist/
+coverage/
+*.db
+.env
+.env.test
