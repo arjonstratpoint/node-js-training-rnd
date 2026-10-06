@@ -48,8 +48,24 @@ database.
 
 ## Deliverable: Task API v4
 
-At least 25 integration tests covering all endpoints and every error path; a passing GitHub Actions
-workflow; a coverage report.
+**25+ integration tests covering every endpoint and error path, a passing GitHub Actions workflow,
+and an 80%+ coverage report.**
+
+## Lab
+
+*Goal: prove the API actually works end to end, against a real database, not just in your head.*
+
+**You do.**
+
+1. Set up Jest, Supertest, and the test database strategy (separate `test.db`, `globalSetup`,
+   foreign-key-safe cleanup).
+2. Write tests for the happy paths, validation failures, 404s, 409s, and malformed JSON.
+3. Write tests for pagination/filter/sort behavior and middleware behavior.
+4. Add `PATCH /tasks/:id/complete` test-first (red → green → refactor).
+5. Set up the GitHub Actions workflow and confirm green CI.
+
+**You build and capture.** 25+ passing tests, 80%+ coverage on routes/services, and the suite
+passing with `--randomize`.
 
 ## Definition of done
 

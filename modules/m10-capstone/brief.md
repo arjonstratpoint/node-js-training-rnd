@@ -68,7 +68,24 @@ them in the program's stack table, so note your choice and version in your write
 
 ## Deliverable
 
-A complete, independently built REST API in your chosen domain, version-controlled from the start.
+**A complete, independently built REST API in a new domain, scoring 70+ on the 100-point rubric,
+version-controlled from the start.**
+
+## Lab
+
+*Goal: build, secure, test, and ship a complete API alone, in a domain you've never touched before,
+with nothing to copy from.*
+
+**You do.**
+
+1. Day 3 — plan as GitHub Issues, design the schema and ERD, create the first migrations, set up
+   the project skeleton.
+2. Day 4 — build the routes, validation, error handling, authentication/authorization, and the
+   concurrency-proof business rule; write the tests.
+3. Day 5 — polish, get a peer review, and deliver the 10-minute demo plus Q&A.
+
+**You build and capture.** Every rubric must-have, your rubric self-score, and the evidence for the
+concurrency proof (the before/after of the race condition).
 
 ## Rubric (100 points, 70+ passes)
 

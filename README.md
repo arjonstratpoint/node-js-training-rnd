@@ -40,7 +40,7 @@ knowledge/                                                 — reserved for patt
 
 ## Modules
 
-Ten stages, each a folder under `modules/` with `brief.md` (objective, scope, deliverable,
+Ten stages, each a folder under `modules/` with `brief.md` (objective, scope, deliverable, lab,
 definition of done — no solutions), `write-up-template.md` (blank, filled in by the trainee as
 they build), and `tasks.md` (an ordered checklist generated from the brief via
 `/trainee-task-planner`). Four modules (M05, M07, M08, M09) grow one Task API from v1 to v4; the

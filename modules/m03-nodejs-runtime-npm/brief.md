@@ -40,9 +40,25 @@ npm.
 
 ## Deliverable
 
-1. A `log-report` CLI that streams a large log/CSV file, aggregates counts, accepts options via
-   `parseArgs`, and writes a JSON report.
-2. A bare `node:http` server with three JSON endpoints, with manual routing and body parsing.
+**A `log-report` CLI that streams a large log file into a JSON report, and a bare `node:http`
+server with three JSON endpoints — both merged to `main` by PR.**
+
+## Lab
+
+*Goal: feel why a framework like Express exists by building the things it will later remove pain
+from.*
+
+**You do.**
+
+1. Get the synthetic log file from your trainer.
+2. Build the `log-report` CLI: stream the file (don't load it fully into memory), aggregate
+   counts, accept options via `parseArgs`, and write a JSON report.
+3. Build the bare `node:http` server with three JSON endpoints, hand-rolling routing and body
+   parsing.
+4. Merge both programs to `main` by PR.
+
+**You build and capture.** Both merged PRs, and your own explanation of what a framework like
+Express would specifically remove pain from.
 
 ## Definition of done
 

@@ -50,11 +50,28 @@ Express API.
 
 ## Deliverable: Task API v2
 
-Translate the M06 schema into Prisma. At least two migrations (an initial one, then an added column
-such as `dueDate` or `priority`) plus one hand-edited migration via `--create-only`. Replace the
-in-memory store from v1 with a service layer on Prisma. The list endpoint supports `status` and `q`
-filters, sorting, and `page`/`pageSize` pagination, returning `{ data, meta }`. A seed script. Prisma
-errors mapped in the central handler you already built in M05.
+**The M06 schema translated into Prisma, with 2+ migrations (one hand-edited), a service layer
+replacing the in-memory store, filtered/sorted/paginated listing, a seed script, and Prisma errors
+mapped into the existing error handler.**
+
+## Lab
+
+*Goal: replace the in-memory store with a properly migrated, typed Prisma layer without breaking
+anything already passing.*
+
+**You do.**
+
+1. Set up Prisma 7 with the SQLite driver adapter and translate the M06 schema.
+2. Create your initial migration, then a second migration adding a column such as `dueDate` or
+   `priority`.
+3. Hand-edit one migration via `--create-only`.
+4. Build the service layer on Prisma, replacing the in-memory store from v1.
+5. Implement the list endpoint's `status`/`q` filters, sorting, and `page`/`pageSize` pagination,
+   returning `{ data, meta }`.
+6. Write the seed script and map Prisma's error codes into the existing M05 error handler.
+
+**You build and capture.** `migrate reset` plus the seed script rebuilding the database from
+scratch, and the Bruno collection from M05 still green against v2.
 
 ## Definition of done
 

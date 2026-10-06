@@ -32,10 +32,26 @@ Design a small relational schema and write the SQL needed to query it, before an
 
 ## Deliverable
 
-Design the Task API schema (`users`, `tasks`, `tags`, `task_tags`); create and seed it with SQL;
-complete the graded query exercises your trainer assigns (joins, aggregates, pagination); draw the
-ERD in Mermaid; demonstrate SQL injection against a string-concatenated query, then fix it with
-parameters.
+**A `users`/`tasks`/`tags`/`task_tags` schema, created and seeded with SQL, with 20+ graded query
+exercises, a Mermaid ERD, and a working SQL-injection demo and fix.**
+
+## Lab
+
+*Goal: design and query a real relational schema by hand, before an ORM hides the SQL.*
+
+**You do.**
+
+1. Design the schema, including the `task_tags` junction table.
+2. Write the DDL and seed the database with SQL.
+3. Write and run 20+ of your own graded query exercises, covering filtering/sorting/pagination,
+   joins, aggregates, and at least one subquery.
+4. Write at least one query inside an explicit transaction.
+5. Demonstrate a SQL-injection attack against a vulnerable, string-concatenated query, then fix it
+   with parameters.
+6. Draw the ERD in Mermaid, matching the schema you actually built.
+
+**You build and capture.** The schema and seed SQL, your 20+ exercises, the Mermaid ERD, and the
+before/after of the injection demo.
 
 ## Definition of done
 

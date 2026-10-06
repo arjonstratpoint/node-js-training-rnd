@@ -14,11 +14,12 @@ one after the other.
 
 ## How a stage works
 
-1. Read the stage's `brief.md` — objective, scope, stack constraints, deliverable, definition of
-   done, and anything still open that needs your trainer's sign-off before you start.
+1. Read the stage's `brief.md` — objective, scope, stack constraints, deliverable, lab, definition
+   of done, and anything still open that needs your trainer's sign-off before you start.
 2. Run `/trainee-task-planner modules/<stage>` to turn that brief into an ordered `tasks.md`
    checklist. Work through it solo.
-3. Build the deliverable. Fill in `write-up-template.md` stage by stage, while the decisions and
+3. Build the lab, producing the deliverable. Fill in `write-up-template.md` stage by stage, while
+   the decisions and
    problems are still fresh — not after the thing already works.
 4. Bring both the build and the write-up to your trainer at the stage's checkpoint (see the Friday
    gates below). They review both together, the same way the build-to-teach framework has the EM

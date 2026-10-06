@@ -42,10 +42,23 @@ schemas.
 
 ## Deliverable: Task API v3
 
-Replace all hand-written validation with Zod: schemas for create, update, list query, and params;
-the typed `validate` middleware; env validation; consistent 400 payloads using the error envelope
-fixed in M05. Use `tsc --noEmit` to show that handler input types come from `z.infer`, not
-from hand-written interfaces.
+**All hand-written validation replaced by Zod schemas (create/update/list-query/params), a typed
+`validate` middleware, env validation, and handler types proven to come from `z.infer`.**
+
+## Lab
+
+*Goal: make invalid input structurally impossible to reach your business logic.*
+
+**You do.**
+
+1. Write Zod schemas for create, update, list query, and params.
+2. Build the typed `validate` middleware, working around `req.query` being read-only in Express 5.
+3. Remove every hand-written validation check as you wire Zod in — not alongside it.
+4. Map `ZodError` output into the fixed M05 envelope's `details` array.
+5. Add env validation in `config.ts` that fails fast on startup.
+
+**You build and capture.** `tsc --noEmit` proving handler types come from `z.infer`, and
+confirmation that no manual `if (!body.title)` checks remain anywhere.
 
 ## Definition of done
 

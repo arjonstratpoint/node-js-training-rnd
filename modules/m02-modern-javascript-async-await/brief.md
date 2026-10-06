@@ -46,16 +46,26 @@ asynchronous code.
 
 ## Deliverable
 
-An "Async toolkit" ES module containing:
+**An "Async toolkit" ES module — `sleep`, `retry`, `withTimeout`, `mapLimit` — each with passing
+`node:assert` self-checks, plus a timing comparison and a callback-to-async refactor.**
 
-- `sleep`
-- `retry(fn, { retries, delayMs })`
-- `withTimeout(promise, ms)`
-- `mapLimit(items, limit, fn)`
+## Lab
 
-Each function needs its own `node:assert` self-checks. Separately: fetch from a free public API
-sequentially vs in parallel and compare timings. Refactor a piece of callback-style `node:fs` code to
-promises/async-await.
+*Goal: prove you can write correct, idiomatic async code by building small utilities that are easy
+to get subtly wrong.*
+
+**You do.**
+
+1. Research the language essentials and async concepts in Scope before you start building.
+2. Build `sleep`, `retry(fn, { retries, delayMs })`, `withTimeout(promise, ms)`, and
+   `mapLimit(items, limit, fn)`, each with its own self-check.
+3. Fetch from JSONPlaceholder sequentially, then in parallel, and compare the timings.
+4. Refactor a piece of callback-style `node:fs` code to promises/async-await.
+5. Be ready to predict and explain the output order of a mixed `setTimeout`/promise/`await`
+   snippet.
+
+**You build and capture.** The toolkit module with all self-checks passing, and your timing
+comparison's actual numbers.
 
 ## Definition of done
 

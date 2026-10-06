@@ -51,10 +51,23 @@ Node.js.
 
 ## Deliverable
 
-Port the M02 "Async toolkit" to TypeScript with generics (`retry<T>`, `mapLimit<T, R>`). Model the
-Task domain: `Task`, `CreateTaskInput`, and `UpdateTaskInput` derived with utility types, plus a
-discriminated-union `Result<T, E>`. Run it with `tsx`, and attempt it with Node's native type
-stripping as well.
+**The M02 toolkit ported to TypeScript with generics, plus Task-domain types (`Task`,
+`CreateTaskInput`, `UpdateTaskInput`, `Result<T, E>`) — zero `tsc --noEmit` errors under a strict
+config.**
+
+## Lab
+
+*Goal: prove the toolkit and the Task domain type-check cleanly under a strict TypeScript config.*
+
+**You do.**
+
+1. Set up the TypeScript project (`tsconfig.json`, scripts) before porting any code.
+2. Port `retry`, `mapLimit`, `sleep`, and `withTimeout` to TypeScript with generics.
+3. Model the Task domain types and a discriminated-union `Result<T, E>`.
+4. Run the ported toolkit via `tsx`, and attempt it via Node's native type stripping.
+
+**You build and capture.** Zero `tsc --noEmit` errors on a strict config, and your own explanation
+of `unknown` vs `any` and `type` vs `interface`.
 
 ## Definition of done
 

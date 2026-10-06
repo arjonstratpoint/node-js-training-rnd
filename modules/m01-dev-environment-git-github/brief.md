@@ -30,8 +30,26 @@ Set up the toolchain, use the everyday Git workflow, and collaborate through Git
 
 ## Deliverable
 
-A public repo with a `hello-node` script. Branch → pull request → peer review → merge. Pair with
-another trainee and resolve a deliberately created merge conflict together.
+**A merged pull request on a public repo containing a `hello-node` script, with a resolved merge
+conflict in its history.**
+
+## Lab
+
+*Goal: prove you can take a change through the full branch → PR → review → merge cycle, including
+resolving a real conflict.*
+
+**You do.**
+
+1. Set up your toolchain (VS Code, Git, a Node version manager, Bruno) and create the public repo.
+2. Write the `hello-node` script on a feature branch, committing with Conventional Commits as you
+   go.
+3. Add `.gitignore` and `.env.example`.
+4. Open a pull request and get a peer review from your assigned partner.
+5. With your pair, deliberately create a merge conflict, then resolve it together.
+6. Merge once the PR carries 3 or more Conventional Commits.
+
+**You build and capture.** The merged PR link, `.gitignore` and `.env.example` present in the repo,
+and your own explanation of `git revert` vs `git reset`.
 
 ## Definition of done
 

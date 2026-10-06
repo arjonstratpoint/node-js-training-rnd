@@ -76,10 +76,28 @@ exposing them as full resources as an optional stretch goal, not a requirement.
 
 ## Deliverable: Task API v1
 
-In-memory store. `GET/POST /api/v1/tasks`, `GET/PATCH/DELETE /api/v1/tasks/:id`. Request-ID and
-logging middleware, a central error handler producing the envelope above, and **hand-written
-validation** — deliberately, so M08's Zod payoff actually lands. A Bruno collection with assertions,
-committed.
+**An in-memory Express REST API (`/api/v1/tasks`) with request-ID/logging middleware, a central
+error handler producing the fixed envelope, hand-written validation, and a committed Bruno
+collection.**
+
+## Lab
+
+*Goal: stand up a real, well-structured REST API with one consistent error model — the foundation
+every later module builds on.*
+
+**You do.**
+
+1. Write `app.ts` (exports the app, no `listen`) and `server.ts` (listens, shuts down gracefully)
+   as separate files.
+2. Build your `AppError` hierarchy and the central error handler producing the fixed envelope.
+3. Build the request-ID and logging middleware.
+4. Build the in-memory store and the five `/api/v1/tasks` endpoints, with hand-written
+   validation — deliberately, so M08's Zod payoff actually lands.
+5. Add a 404 handler and a health endpoint.
+6. Build the Bruno collection with assertions for every endpoint and error path.
+
+**You build and capture.** v1 merged by PR, every error path matching the fixed envelope, and the
+Bruno collection passing.
 
 ## Definition of done
 
