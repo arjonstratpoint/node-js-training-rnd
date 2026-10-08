@@ -74,21 +74,3 @@ rules and Friday-gate cadence.
   remediation policy, environment setup, delivery roles) and the
   [Solution Design](<docs/arch-docs/Node.js Developer Training Program — Solution Design.md>) for
   the reasoning behind it.
-
-## Tooling this repo runs on
-
-- **`.claude/commands/`** — custom skills, including the E→P→A→V cycle (`/evaluate` → `/plan` →
-  `/apply` → `/validate`), `/trainee-task-planner` (turns a stage's `brief.md` into an ordered
-  `tasks.md`), `/create-cohort-handover`, `/create-rubric`, and the Moodle-materials generators
-  (`/create-moodle-page`, `/create-moodle-quiz`, `/create-moodle-materials`).
-- **`graphify-out/`** — a generated knowledge-graph cache over this repo (gitignored, regenerate
-  with `/graphify .`).
-- **`.mcp.json`** — the `nexus-jev` MCP server this project connects to.
-- **`.vscode/settings.json`** — Markdown files open straight into Preview by default.
-
-## Pinned stack (this cohort)
-
-Node.js 24 LTS · Express 5.x · TypeScript 7.0 · Prisma ORM 7.x (always `@7`, never unversioned) ·
-SQLite via `better-sqlite3` · Zod 4.x · Jest 30.x · Supertest 7.x · Bruno · Git/GitHub Actions. Free
-tools only — no Docker, no paid licences. Full detail and the reasoning behind each pin is in the
-Solution Design and the consolidated curriculum doc linked above.
