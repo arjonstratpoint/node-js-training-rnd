@@ -6,8 +6,6 @@ and write it up as you go, your trainer reviews both together, you revise, and t
 becomes teaching material for the next cohort (see `docs/build-to-teach-framework.md` for the full
 cycle this is built on).
 
-No cohort has run yet — this repo is still in the authoring/R&D stage (hence `-rnd`).
-
 A note on words: a **module** in this repository is a training stage, not a JavaScript/Node.js
 module. Stages M02 and M03 are the ones that actually teach what a JavaScript/Node.js module is
 (named vs default exports, ESM vs CommonJS).
@@ -18,11 +16,6 @@ module. Stages M02 and M03 are the ones that actually teach what a JavaScript/No
 | --- | --- |
 | `modules/` | The nine stage folders (M01–M09), each with a brief, a checklist, and a write-up template |
 | `modules/m10-capstone/` | The capstone, with its own brief, checklist, and write-up template |
-
-The other folders are trainer and program-reference material — `docs/curriculum/` for the
-single-document curriculum view, `docs/arch-docs/` and `docs/prd/` for the original design
-reasoning, `docs/materials/` and `docs/templates/` for generated and reference Moodle artifacts.
-You do not need them to do the stages.
 
 ## How a stage works
 
