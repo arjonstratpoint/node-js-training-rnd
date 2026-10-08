@@ -48,9 +48,9 @@ problems early instead of in a finished draft nobody wants to redo.
 
 | File | Who writes it | Purpose |
 | --- | --- | --- |
-| `brief.md` | Your trainer | What to build and how you will know it is done. Do not edit it. |
+| `brief.md` | Your trainer | Objective, scope, stack constraints, the deliverable, a lab (goal, steps, what to capture), and definition of done. No answers. Do not edit it. |
 | `write-up-template.md` | You | Blank at first; filled in as you build, not after. |
-| `tasks.md` | Generated from `brief.md` via `/trainee-task-planner` | An ordered checklist for the stage — one task per scope topic, deliverable/lab component, definition-of-done check, and write-up section. You tick the boxes; it holds no answers and no steps you weren't already told. |
+| `tasks.md` | Generated from `brief.md` via `/trainee-task-planner` | An ordered checklist mirroring the brief — setup, then research (M02–M09), then build (Day 3/4/5 for the M10 capstone), then verify, then write-up. You tick the boxes; it holds no answers and no steps you weren't already told. |
 
 Your Node.js code lives outside this repository, in your own GitHub repo (the public training repo
 you set up in M01). Link it from the header of your write-up. The capstone folder has the same
