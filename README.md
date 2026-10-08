@@ -1,10 +1,10 @@
-# Node.js Developer Training — training stages and capstone
+# Node.js Developer Training
 
-This is your Node.js Developer Training course: nine training stages in `modules/` (M01–M09),
-followed by a capstone project. For each stage your trainer gives you a brief. You build the stage
-and write it up as you go, your trainer reviews both together, you revise, and the finished pair
-becomes teaching material for the next cohort (see `docs/build-to-teach-framework.md` for the full
-cycle this is built on).
+This repo holds the Build-to-Teach version of the Node.js Developer Training Program: nine training
+stages in `modules/` (M01–M09), followed by a capstone project. The format is different on purpose:
+instead of being taught the material, the trainee builds toward each stage's deliverable from a
+brief, and writes up how they did it as they go. The write-up is what ends up teaching the next
+cohort.
 
 A note on words: a **module** in this repository is a training stage, not a JavaScript/Node.js
 module. Stages M02 and M03 are the ones that actually teach what a JavaScript/Node.js module is
@@ -35,8 +35,14 @@ module. Stages M02 and M03 are the ones that actually teach what a JavaScript/No
 5. **The finished pair goes into the content library.** An accepted stage is the build plus its
    write-up. Your trainer decides what carries into the next cohort's plan.
 
-Review happens at the end of every stage, not just at the end of the course. A write-up produced
-after the system already works tends to be thin; reviewing as you go is what keeps it good.
+Review happens at the end of every stage, not just at the end of the course.
+
+## Why review as you go, not at the end
+
+A write-up finished after the deliverable already works tends to be thin — there's no real
+pressure to make it good once the thing runs. Reviewing both pieces together, stage by stage,
+means the trainer is judging whether the work is teachable, not just whether it works, and catches
+problems early instead of in a finished draft nobody wants to redo.
 
 ## What is in each stage folder
 
