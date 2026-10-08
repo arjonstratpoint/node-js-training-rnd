@@ -63,8 +63,16 @@ Express API.
 ## Write-up
 
 - [ ] "What I built".
-- [ ] "Decisions and why": schema-to-Prisma translation choices, your service-layer design, how you
-      mapped Prisma error codes onto your M05 error handler.
-- [ ] "Problems I hit and how I solved them": migration conflicts, the hand-edited `--create-only`
-      migration, the `better-sqlite3` install if it gave you trouble.
-- [ ] Close out "What I'd tell the next trainee" and "Open questions for my trainer".
+- [ ] "Why it's built this way (key decisions)": your schema-to-Prisma translation choices, what
+      you had to hand-edit in the `--create-only` migration and why `migrate dev` couldn't generate
+      it, and how you mapped Prisma error codes onto your M05 error handler.
+- [ ] "How to build it (teach it to the next trainee)": write the add-a-column-to-an-existing-table
+      guide.
+- [ ] "Concepts worth explaining": pick 1-2 ideas and explain each in your own words.
+- [ ] "What tripped me up": migration conflicts, the hand-edited `--create-only` migration, the
+      `better-sqlite3` install if it gave you trouble.
+- [ ] "Checkpoint evidence": `migrate reset` plus the seed script rebuilding the database from
+      scratch, the Bruno collection from M05 still green against v2, `P2002`/`P2025`/`P2003` each
+      mapping to the right status code, your explanation of `migrate dev` vs `migrate deploy`, and
+      `package.json` locking `prisma`/`@prisma/client` to `^7`.
+- [ ] Close out "What I'd do differently".

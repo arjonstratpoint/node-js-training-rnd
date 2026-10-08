@@ -5,14 +5,34 @@
 
 ## What I built
 
-## Decisions and why
+The schema (with the `task_tags` junction table), your seed data, your 20+ exercises, the Mermaid
+ERD, and the injection demo.
 
-(schema design choices, why you indexed what you indexed, your junction-table design for `task_tags`)
+## Why it's built this way (key decisions)
 
-## Problems I hit and how I solved them
+- Why this junction-table design for `task_tags`, specifically?
+- What did you index, and what would change in your queries if you hadn't?
+- Which of your 20+ exercises taught you something you didn't expect going in?
 
-(the SQL injection demo, any constraint or join surprises)
+## How to build it (teach it to the next trainee)
 
-## What I'd tell the next trainee
+Write a guide to designing a junction table for a many-to-many relationship, using your own example
+to show the reasoning, not just the SQL.
 
-## Open questions for my trainer
+## Concepts worth explaining
+
+Pick 1-2 ideas — 1:N vs M:N modeling, what an index is for, or why parameterised queries stop
+injection — and explain each in your own words.
+
+## What tripped me up
+
+The SQL injection demo, any constraint or join surprises.
+
+## Checkpoint evidence
+
+Show your 20+ query exercises, the Mermaid ERD matching your schema, and the injection demo
+succeeding against the vulnerable query then failing against the fixed one.
+
+## What I'd do differently
+
+If you started this module over, what would you do differently?

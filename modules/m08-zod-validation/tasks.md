@@ -57,7 +57,13 @@ schemas.
 ## Write-up
 
 - [ ] "What I built".
-- [ ] "Decisions and why": schema design per endpoint, how you handled `req.query` being read-only,
-      how you kept Zod and Prisma types aligned.
-- [ ] "Problems I hit and how I solved them".
-- [ ] Close out "What I'd tell the next trainee" and "Open questions for my trainer".
+- [ ] "Why it's built this way (key decisions)": schema design per endpoint, how you handled
+      `req.query` being read-only, how you kept Zod and Prisma types aligned.
+- [ ] "How to build it (teach it to the next trainee)": write the typed-validation-middleware
+      guide.
+- [ ] "Concepts worth explaining": pick 1-2 ideas and explain each in your own words.
+- [ ] "What tripped me up".
+- [ ] "Checkpoint evidence": v3 merged by PR, `tsc --noEmit` proving handler types come from
+      `z.infer`, confirmation no manual checks remain, invalid input never reaching Prisma, and a
+      400 response carrying `details` in the exact envelope shape fixed in M05.
+- [ ] Close out "What I'd do differently".

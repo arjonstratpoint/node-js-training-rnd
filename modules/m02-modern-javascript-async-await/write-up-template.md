@@ -5,16 +5,35 @@
 
 ## What I built
 
-## Decisions and why
+The Async toolkit module (`sleep`, `retry`, `withTimeout`, `mapLimit`), its self-checks, and your
+actual sequential-vs-parallel timing numbers.
 
-(e.g. how you implemented `retry` and `mapLimit`, which public API you chose and why, how you
-structured the self-checks)
+## Why it's built this way (key decisions)
 
-## Problems I hit and how I solved them
+- Why did you implement `retry` and `mapLimit` the way you did?
+- What would have changed if you'd fetched sequentially instead of in parallel, or vice versa?
+- Which of the brief's pitfalls (forgotten `await`, `await` in loops, unhandled rejections) did you
+  specifically design around?
 
-(forgotten `await`, race conditions in `mapLimit`, timing noise in the sequential-vs-parallel
-comparison, etc.)
+## How to build it (teach it to the next trainee)
 
-## What I'd tell the next trainee
+Write a guide to building one of these utilities (your choice), using your own example to show the
+reasoning, not just the syntax.
 
-## Open questions for my trainer
+## Concepts worth explaining
+
+Pick 1-2 ideas — the event loop/microtask queue, closures, or `Promise.all` vs `allSettled`/`race`/
+`any` — and explain each in your own words.
+
+## What tripped me up
+
+Anything that didn't behave the way you expected the first time.
+
+## Checkpoint evidence
+
+Show your self-checks passing, your actual sequential-vs-parallel timing numbers, and your
+explanation of the `setTimeout`/promise/`await` output order.
+
+## What I'd do differently
+
+If you started this module over, what would you do differently?

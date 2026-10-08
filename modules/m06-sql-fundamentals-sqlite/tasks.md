@@ -56,8 +56,12 @@ Design a small relational schema and write the SQL needed to query it, before an
 ## Write-up
 
 - [ ] "What I built".
-- [ ] "Decisions and why": schema design choices, why you indexed what you indexed, your
-      junction-table design for `task_tags`.
-- [ ] "Problems I hit and how I solved them": the SQL injection demo, any constraint or join
-      surprises.
-- [ ] Close out "What I'd tell the next trainee" and "Open questions for my trainer".
+- [ ] "Why it's built this way (key decisions)": your junction-table design for `task_tags`, what
+      you indexed and why, and which of your 20+ exercises taught you something you didn't expect.
+- [ ] "How to build it (teach it to the next trainee)": write the junction-table guide.
+- [ ] "Concepts worth explaining": pick 1-2 ideas and explain each in your own words.
+- [ ] "What tripped me up": the SQL injection demo, any constraint or join surprises.
+- [ ] "Checkpoint evidence": your 20+ query exercises, the Mermaid ERD matching your schema, and
+      the injection demo succeeding against the vulnerable query then failing against the fixed
+      one.
+- [ ] Close out "What I'd do differently".

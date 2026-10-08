@@ -68,9 +68,13 @@ Build a well-structured REST API with Express 5 in TypeScript, with a consistent
 ## Write-up
 
 - [ ] "What I built".
-- [ ] "Decisions and why": your `AppError` hierarchy, your middleware order, and how you implemented
-      the fixed error envelope.
-- [ ] "Problems I hit and how I solved them": Express 5 migration surprises, middleware ordering
-      bugs, etc.
-- [ ] Close out "What I'd tell the next trainee" and "Open questions for my trainer" — flag here if
-      the fixed envelope or Task field/scope contract caused friction for your situation.
+- [ ] "Why it's built this way (key decisions)": how you implemented the fixed error envelope and
+      your `AppError` hierarchy, your middleware order, and why you hand-wrote validation here
+      instead of reaching for a library.
+- [ ] "How to build it (teach it to the next trainee)": write the central-error-handler guide.
+- [ ] "Concepts worth explaining": pick 1-2 ideas and explain each in your own words.
+- [ ] "What tripped me up": Express 5 migration surprises, middleware ordering bugs, etc.
+- [ ] "Checkpoint evidence": v1 merged by PR, every error path matching the fixed envelope, and the
+      Bruno collection passing.
+- [ ] Close out "What I'd do differently" — flag here if the fixed envelope or Task field/scope
+      contract caused friction for your situation.

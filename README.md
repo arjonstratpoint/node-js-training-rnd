@@ -58,18 +58,18 @@ three files.
 
 ## Stages
 
-| Stage | Title | Checklist | Theme | Leaves behind |
-| --- | --- | --- | --- | --- |
-| M01 | Dev Environment, Git & GitHub | [tasks](modules/m01-dev-environment-git-github/tasks.md) | Toolchain, the everyday Git workflow, a merged PR with a resolved conflict | Nothing |
-| M02 | Modern JavaScript & Async/Await | [tasks](modules/m02-modern-javascript-async-await/tasks.md) | Language essentials, the event loop, reliable async code | The Async toolkit (ported to TypeScript in M04) |
-| M03 | Node.js Runtime & npm | [tasks](modules/m03-nodejs-runtime-npm/tasks.md) | Core modules, npm, a bare `node:http` server | Nothing |
-| M04 | TypeScript Basics & TypeScript on Node.js | [tasks](modules/m04-typescript-on-node/tasks.md) | Strict TypeScript, the Task domain types | The ported toolkit and Task domain types |
-| M05 | Express: Routing, Middleware & Error Handling | [tasks](modules/m05-express-task-api-v1/tasks.md) | REST API structure, middleware, one consistent error model | Task API v1 (extended through M07–M09) |
-| M06 | SQL Fundamentals with SQLite | [tasks](modules/m06-sql-fundamentals-sqlite/tasks.md) | Relational design, joins, transactions, SQL injection | The schema design (translated into Prisma in M07) |
-| M07 | Prisma ORM & Migrations | [tasks](modules/m07-prisma-orm-migrations/tasks.md) | Migrations, the typed client, Prisma error mapping | Task API v2 |
-| M08 | Zod Validation & Type Inference | [tasks](modules/m08-zod-validation/tasks.md) | Runtime validation, type inference from schemas | Task API v3 |
-| M09 | Integration Testing with Jest + Supertest | [tasks](modules/m09-integration-testing/tasks.md) | Real-database integration tests, CI | Task API v4 |
-| M10 | Capstone Project | [tasks](modules/m10-capstone/tasks.md) | Independent API, authentication, a provable concurrency fix | — (terminal stage) |
+| Stage | Title | Theme | Leaves behind |
+| --- | --- | --- | --- |
+| M01 | Dev Environment, Git & GitHub | Toolchain, the everyday Git workflow, a merged PR with a resolved conflict | Nothing |
+| M02 | Modern JavaScript & Async/Await | Language essentials, the event loop, reliable async code | The Async toolkit (ported to TypeScript in M04) |
+| M03 | Node.js Runtime & npm | Core modules, npm, a bare `node:http` server | Nothing |
+| M04 | TypeScript Basics & TypeScript on Node.js | Strict TypeScript, the Task domain types | The ported toolkit and Task domain types |
+| M05 | Express: Routing, Middleware & Error Handling | REST API structure, middleware, one consistent error model | Task API v1 (extended through M07–M09) |
+| M06 | SQL Fundamentals with SQLite | Relational design, joins, transactions, SQL injection | The schema design (translated into Prisma in M07) |
+| M07 | Prisma ORM & Migrations | Migrations, the typed client, Prisma error mapping | Task API v2 |
+| M08 | Zod Validation & Type Inference | Runtime validation, type inference from schemas | Task API v3 |
+| M09 | Integration Testing with Jest + Supertest | Real-database integration tests, CI | Task API v4 |
+| M10 | Capstone Project | Independent API, authentication, a provable concurrency fix | — (terminal stage) |
 
 Work the stages in order. Later stages build on earlier ones: M05's Task API carries forward
 through M07, M08, and M09 (v1 → v4), and M06's schema design is what M07 translates into Prisma.

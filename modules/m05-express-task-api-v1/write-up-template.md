@@ -6,15 +6,35 @@
 
 ## What I built
 
-## Decisions and why
+Task API v1 — the endpoints, the middleware stack, your `AppError` hierarchy, and the Bruno
+collection.
 
-(especially: how you implemented the fixed error envelope, your `AppError` hierarchy, your
-middleware order, and why)
+## Why it's built this way (key decisions)
 
-## Problems I hit and how I solved them
+- How did you implement the fixed error envelope, and what's the actual `AppError` hierarchy you
+  designed?
+- What's your middleware order, and what would break if two of your middleware swapped places?
+- Why hand-write validation here instead of reaching for a library, given M08 is coming?
 
-(Express 5 migration surprises, middleware ordering bugs, etc.)
+## How to build it (teach it to the next trainee)
 
-## What I'd tell the next trainee
+Write a guide to building a central error handler that produces one consistent shape, using your
+own example to show the reasoning, not just the code.
 
-## Open questions for my trainer
+## Concepts worth explaining
+
+Pick 1-2 ideas — the middleware pipeline, operational vs programmer errors, or Express 5's
+auto-forwarded rejected promises — and explain each in your own words.
+
+## What tripped me up
+
+Express 5 migration surprises, middleware ordering bugs, etc.
+
+## Checkpoint evidence
+
+Show v1 merged by PR, every error path returning the fixed envelope, and the Bruno collection
+passing.
+
+## What I'd do differently
+
+If you started this module over, what would you do differently?

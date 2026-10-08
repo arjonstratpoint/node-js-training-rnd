@@ -32,6 +32,8 @@ asynchronous code.
 - [ ] `fetch` and working with JSON responses.
 - [ ] The common async pitfalls: forgotten `await`, `await` inside loops, `forEach(async …)`,
       unhandled rejections, swallowed errors — know what each looks like before you build.
+- [ ] Note (awareness only): Temporal exists as the future replacement for `Date` — you don't need
+      to use it here.
 
 ## Build
 
@@ -54,8 +56,13 @@ asynchronous code.
 ## Write-up
 
 - [ ] "What I built": log each toolkit function as you finish it, not all at the end.
-- [ ] "Decisions and why": how you implemented `retry`/`mapLimit`, and how you structured the
-      self-checks.
-- [ ] "Problems I hit and how I solved them": note forgotten-`await` or race-condition surprises as
-      they happen.
-- [ ] Close out "What I'd tell the next trainee" and "Open questions for my trainer".
+- [ ] "Why it's built this way (key decisions)": how you implemented `retry`/`mapLimit`, what
+      would change if you'd fetched the other way (sequential vs parallel), and which async
+      pitfall you specifically designed around.
+- [ ] "How to build it (teach it to the next trainee)": write the guide for one utility of your
+      choice.
+- [ ] "Concepts worth explaining": pick 1-2 ideas and explain each in your own words.
+- [ ] "What tripped me up": note forgotten-`await` or race-condition surprises as they happen.
+- [ ] "Checkpoint evidence": your self-checks passing, your actual timing numbers, and your
+      explanation of the `setTimeout`/promise/`await` output order.
+- [ ] Close out "What I'd do differently".

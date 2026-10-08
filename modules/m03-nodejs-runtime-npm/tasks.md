@@ -57,8 +57,13 @@ with npm.
 ## Write-up
 
 - [ ] "What I built": the CLI and the bare server, as you finish each.
-- [ ] "Decisions and why": how you structured the streaming parse, and how you hand-rolled the
-      routing/body parsing.
-- [ ] "Problems I hit and how I solved them".
-- [ ] Close out "What I'd tell the next trainee" (especially what made the bare server painful) and
-      "Open questions for my trainer".
+- [ ] "Why it's built this way (key decisions)": why this streaming approach specifically, what
+      would break if you'd loaded the file fully into memory instead, and how you designed the
+      hand-rolled routing/body parsing.
+- [ ] "How to build it (teach it to the next trainee)": write the streaming-CLI guide.
+- [ ] "Concepts worth explaining": pick 1-2 ideas and explain each in your own words.
+- [ ] "What tripped me up" (especially what made the bare server painful — that's the point of
+      this lab).
+- [ ] "Checkpoint evidence": both programs merged to `main` by PR, the CLI's memory behavior on the
+      full log file, and the bare server's three endpoints responding.
+- [ ] Close out "What I'd do differently".

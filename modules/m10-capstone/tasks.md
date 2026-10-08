@@ -79,13 +79,18 @@ no reference solution to copy from.
 
 - [ ] "Domain chosen, and why": fill this in before you start building, not after.
 - [ ] "What I built".
-- [ ] "Decisions and why": your schema and ERD, which business rule you chose and how you enforced
-      it inside a transaction, your error envelope, your test strategy.
+- [ ] "Why it's built this way (key decisions)": which business rule you chose and why it needed a
+      transaction, which two roles you designed and what genuinely differs between them, and which
+      password-hashing library and token strategy you picked and why.
+- [ ] "How to build it (teach it to the next trainee)": write the concurrency-proof guide.
+- [ ] "Concepts worth explaining": pick 1-2 ideas and explain each in your own words.
 - [ ] "Security & Authorization": your hashing library and why, JWT vs signed session and why, how
       your two roles differ in practice, where rate-limiting is applied.
 - [ ] "Proving the concurrency fix": how you generated concurrent load, what happened before the
       transaction was correct, what happened after — the actual evidence, not just a description.
-- [ ] "Problems I hit and how I solved them".
+- [ ] "What tripped me up".
+- [ ] "Checkpoint evidence": the concurrency script's before/after, the demo you gave, and the peer
+      review you gave and received.
 - [ ] "Rubric self-score": fill in your estimate and evidence for every row, matching the Verify
       step above.
-- [ ] Close out "What I'd tell the next trainee" and "Open questions for my trainer".
+- [ ] Close out "What I'd do differently".

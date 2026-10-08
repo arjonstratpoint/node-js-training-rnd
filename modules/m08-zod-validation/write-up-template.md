@@ -5,13 +5,36 @@
 
 ## What I built
 
-## Decisions and why
+Task API v3 — the Zod schemas, the typed `validate` middleware, and your env validation.
 
-(schema design per endpoint, how you handled `req.query` being read-only, how you kept Zod and
-Prisma types aligned)
+## Why it's built this way (key decisions)
 
-## Problems I hit and how I solved them
+- Why this schema shape for create vs update, specifically — what did `.partial`/`.pick`/`.omit`
+  let you avoid repeating?
+- How did you work around `req.query` being read-only in Express 5?
+- How did you keep your Zod schema and your Prisma type aligned, and what would drift if you
+  hadn't?
 
-## What I'd tell the next trainee
+## How to build it (teach it to the next trainee)
 
-## Open questions for my trainer
+Write a guide to deriving a typed validation middleware from a single schema, using your own
+example to show the reasoning, not just the syntax.
+
+## Concepts worth explaining
+
+Pick 1-2 ideas — `z.infer` vs hand-written types, `parse` vs `safeParse`, or why Zod is the request
+contract and Prisma is the persistence contract — and explain each in your own words.
+
+## What tripped me up
+
+Anything that didn't behave the way you expected the first time.
+
+## Checkpoint evidence
+
+Show v3 merged by PR, `tsc --noEmit` proving your handler types come from `z.infer`, confirmation
+no manual `if (!body.title)` checks remain, invalid input never reaching Prisma, and a 400 response
+carrying `details` in the exact envelope shape fixed in M05.
+
+## What I'd do differently
+
+If you started this module over, what would you do differently?

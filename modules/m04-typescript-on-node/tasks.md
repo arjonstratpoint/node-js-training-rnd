@@ -61,13 +61,20 @@ Node.js.
 - [ ] Zero errors from `tsc --noEmit` on a strict config.
 - [ ] You can explain `unknown` vs `any`, and `type` vs `interface`, unaided.
 - [ ] The toolkit runs successfully via `tsx`.
+- [ ] You've attempted native type stripping on Node 24 and documented what actually happened
+      (awareness-level on this Node version, not a hard pass/fail requirement).
 - [ ] Final self-review against every Definition of done checkbox in `brief.md`.
 
 ## Write-up
 
 - [ ] "What I built".
-- [ ] "Decisions and why": your `tsconfig.json` choices, how you modeled `Result<T, E>`, and which
-      utility types you used for `CreateTaskInput`/`UpdateTaskInput` and why.
-- [ ] "Problems I hit and how I solved them": compiler errors that confused you at first, and the
-      difference between `tsx` and native type stripping on Node 24.
-- [ ] Close out "What I'd tell the next trainee" and "Open questions for my trainer".
+- [ ] "Why it's built this way (key decisions)": which utility types you used for
+      `CreateTaskInput`/`UpdateTaskInput` and why, how you modeled `Result<T, E>`, and what
+      specifically happened when you attempted native type stripping on Node 24.
+- [ ] "How to build it (teach it to the next trainee)": write the utility-types guide.
+- [ ] "Concepts worth explaining": pick 1-2 ideas and explain each in your own words.
+- [ ] "What tripped me up": compiler errors that confused you at first, and the difference between
+      `tsx` and native type stripping on Node 24.
+- [ ] "Checkpoint evidence": zero `tsc --noEmit` errors on your strict config, the toolkit running
+      via `tsx`, and what happened when you attempted native type stripping on Node 24.
+- [ ] Close out "What I'd do differently".

@@ -60,10 +60,14 @@ database.
 ## Write-up
 
 - [ ] "What I built".
-- [ ] "Decisions and why": your test database strategy, how you structured factories/helpers, and
-      which toolchain fallback you needed, if any.
-- [ ] "Problems I hit and how I solved them": flaky tests, ESM/Jest friction, any ordering
-      dependencies the `--randomize` run exposed.
-- [ ] Close out "What I'd tell the next trainee" and "Open questions for my trainer" — write this
-      one especially carefully, since the capstone has no reference material except what you write
-      here.
+- [ ] "Why it's built this way (key decisions)": why this test-database strategy and what would
+      break without cleanup, which toolchain fallback you actually needed (if any), and what
+      test-first `PATCH /tasks/:id/complete` changed about how you wrote the handler.
+- [ ] "How to build it (teach it to the next trainee)": write the isolated-test-database guide.
+- [ ] "Concepts worth explaining": pick 1-2 ideas and explain each in your own words.
+- [ ] "What tripped me up": flaky tests, ESM/Jest friction, any ordering dependencies the
+      `--randomize` run exposed.
+- [ ] "Checkpoint evidence": green CI on your PR, the suite passing with `--randomize`, your
+      coverage report meeting 80%+, and `PATCH /tasks/:id/complete` added test-first.
+- [ ] Close out "What I'd do differently" — write this one especially carefully, since the capstone
+      has no reference material except what you write here.

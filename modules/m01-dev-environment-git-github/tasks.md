@@ -42,9 +42,14 @@ Set up the toolchain, use the everyday Git workflow, and collaborate through Git
 
 - [ ] "What I built": capture the repo, the script, and the PR/merge flow as you finish each piece,
       not all at the end.
-- [ ] "Decisions and why": your branch naming, and how you and your pair actually resolved the
-      conflict.
-- [ ] "Problems I hit and how I solved them": anything that tripped you up in Git, GitHub auth, or
-      the conflict resolution.
-- [ ] "What I'd tell the next trainee" and "Open questions for my trainer": close these out once
-      everything else above is done.
+- [ ] "Why it's built this way (key decisions)": your branch/commit structure, what would differ
+      if the repo had been private with a no-direct-push rule instead of public, and how you and
+      your pair actually resolved the conflict.
+- [ ] "How to build it (teach it to the next trainee)": write the branch → PR → review → merge
+      guide, using your own example to show the reasoning, not just the commands.
+- [ ] "Concepts worth explaining": pick 1-2 ideas and explain each in your own words.
+- [ ] "What tripped me up": anything that tripped you up in Git, GitHub auth, or the conflict
+      resolution.
+- [ ] "Checkpoint evidence": the merged PR link, `.gitignore`/`.env.example`, and your
+      `revert` vs `reset` explanation.
+- [ ] Close out "What I'd do differently".
