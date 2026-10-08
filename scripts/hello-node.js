@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-console.log('Hello, Node!');
+console.log('Hello, Node.js!');
