@@ -5,6 +5,7 @@
 graphify-out/
 
 node_modules/
+prisma/generated/
 dist/
 coverage/
 *.db
