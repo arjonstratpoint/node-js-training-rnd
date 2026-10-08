@@ -70,5 +70,6 @@ before/after of the injection demo.
   schema. Your trainer verifies coverage and correctness at the checkpoint by picking a few at random
   and asking you to run and explain them.
 - **Transactions note:** this module teaches `BEGIN`/`COMMIT`/`ROLLBACK`, but no exercise here forces
-  you to use one. You will need a real transaction for the M10 capstone's business-rule requirement —
-  don't let M06 be the only time you touch one before then; try writing at least one here anyway.
+  you to use one. You will need a real transaction for the capstone's business-rule requirement — a
+  capstone provided separately by the trainer, in a separate repo — so don't let M06 be the only
+  time you touch one before then; try writing at least one here anyway.

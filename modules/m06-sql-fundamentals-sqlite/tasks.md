@@ -37,7 +37,8 @@ Design a small relational schema and write the SQL needed to query it, before an
       filtering/sorting/pagination, `INNER`/`LEFT` joins, aggregates with `GROUP BY`/`HAVING`, and
       at least one subquery.
 - [ ] Write at least one query inside an explicit transaction (`BEGIN`/`COMMIT`/`ROLLBACK`) — no
-      exercise strictly forces this, but you'll need the skill for real in the M10 capstone.
+      exercise strictly forces this, but you'll need the skill for real in the capstone (provided
+      separately by the trainer, in a separate repo).
 - [ ] Write a vulnerable, string-concatenated query and demonstrate a successful SQL injection
       against it.
 - [ ] Fix that same query with parameters and demonstrate the injection now fails.
