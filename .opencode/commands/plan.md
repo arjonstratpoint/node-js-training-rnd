@@ -18,11 +18,26 @@ Run for every significant file the plan will touch. State what else will be affe
 
 ### 2 — Write the implementation blueprint
 
+The deliverable is always the instructional-material Markdown file defined at EVALUATE:
+
+`modules/<module-folder>/module-<module-no.>-<module-title>.md`
+(e.g. `modules/m01-dev-environment-git-github/module-1-dev-environment-git-github.md`).
+
+The blueprint MUST:
+
+- Name that exact target path and list it under **Files created** (or **Files modified** if it
+  already exists — plan to edit, never to duplicate).
+- Lay out the section order to mirror `docs/reference/module-6-express-basics.docx`
+  (title block → Learning Goals → Concept → Read These → Walkthrough(s) → "What This Walkthrough
+  Showed You" → numbered EXERCISEs → Self-Check → Module Deliverable → Appendix answers).
+- Scope every step to producing or editing that file. No product code, no solution files.
+
 Structure the plan as numbered steps:
 
 ```
 PLAN
 ────
+Output artifact: modules/<folder>/module-<no.>-<title>.md
 1. <file or module> — <what changes and why>
 2. <file or module> — <what changes and why>
 ...

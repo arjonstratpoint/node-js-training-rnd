@@ -13,6 +13,12 @@ A plan must be approved. If `/plan` has not run and been approved, stop and ask.
 - Follow the numbered steps from PLAN in order.
 - Reference AGENTS.md coding standards for every file written.
 - Do not add features, refactor unrelated code, or expand scope beyond the plan.
+- The deliverable is the instructional-material file
+  `modules/<module-folder>/module-<module-no.>-<module-title>.md`. Write it as content a developer
+  can follow and test — runnable commands and code, exercises, self-checks. No product code, no
+  solution files, no planning notes.
+- If that file already exists, edit it in place; do not create a second copy or a differently
+  named variant.
 
 ### 2 — The knowledge graph stays current automatically
 

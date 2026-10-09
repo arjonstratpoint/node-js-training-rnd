@@ -18,7 +18,17 @@ Check: does anything that references the changed files now behave unexpectedly? 
 
 ### 2 — Check against acceptance criteria
 
-Load the acceptance criteria from the CSV task (or EVALUATE summary). For each criterion:
+First check the output-artifact criteria (these always apply):
+
+```
+[ ] Target file exists at modules/<folder>/module-<no.>-<title>.md (correct name/location)
+[ ] Mirrors docs/reference/module-6-express-basics.docx section-for-section
+[ ] Instructional material only — no product code, no solution files, no planning
+[ ] Every URL resolves (HTTP 2xx) and every command is internally consistent
+```
+
+Then load any task-specific acceptance criteria from the CSV task (or EVALUATE summary). For each
+criterion:
 
 ```
 [ ] <criterion> — PASS / FAIL / PARTIAL
