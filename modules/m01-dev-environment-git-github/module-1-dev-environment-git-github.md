@@ -6,6 +6,10 @@
 
 **Time estimate: 4 hours**
 
+**Part 1 of the Node.js Engineering Program**
+
+**Prepares you for Part 2: AI-Assisted Engineering (FlowBoard)**
+
 ---
 
 ## Module 1: Dev Environment, Git & GitHub
@@ -273,6 +277,14 @@ The conflict resolution is now its own commit in `main` — which is the point o
 - `git restore` and `git stash` undo or shelve working-tree changes without touching history.
 - `<<<<<<<` / `=======` / `>>>>>>>` are literal text; resolving means editing and re-staging.
 - `git merge` keeps both histories and records the join as a merge commit.
+
+### About the Public Training Repo
+
+This program has you work in a **public** repo on purpose. Branch protection rules (required
+reviewers, no direct pushes to `main`) are gated behind paid GitHub plans on private repos — a
+public repo sidesteps that dependency entirely, so the same workflow works for everyone, and it is
+the default for every module from here on, not just this one. Your Node.js code lives in this repo,
+not in the training content repo; link it from the header of your write-up.
 
 ### EXERCISE 1.1 — A Node `.gitignore` and `.env.example`
 
