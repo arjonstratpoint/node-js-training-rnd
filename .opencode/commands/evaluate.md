@@ -44,7 +44,8 @@ can follow and test end to end. It is never code, never a plan, and never the br
   rule, so every guide stays consistent with the others.
 - **Content:** instructional material only — real, runnable commands and code the learner
   executes and tests, plus exercises and self-checks. No solution files, no product code, no
-  planning.
+  planning. Require that any step creating files/directories includes the exact terminal
+  commands (`mkdir -p`, `touch`, `cat > ... << 'EOF' ... EOF`) with the full sample content.
 - If the target file already exists, EVALUATE treats it as the artifact to review or extend — not
   a source to copy from.
 

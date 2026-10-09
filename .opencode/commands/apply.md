@@ -17,6 +17,9 @@ A plan must be approved. If `/plan` has not run and been approved, stop and ask.
   `modules/<module-folder>/module-<module-no.>-<module-title>.md`. Write it as content a developer
   can follow and test — runnable commands and code, exercises, self-checks. No product code, no
   solution files, no planning notes.
+- When instructing to create files or directories, show the exact terminal commands (e.g., `mkdir -p`,
+  `touch`, `cat > ... << 'EOF' ... EOF`) together with the full sample content in the same
+  fenced code block(s) so the learner can copy-paste and run them end to end.
 - If that file already exists, edit it in place; do not create a second copy or a differently
   named variant.
 

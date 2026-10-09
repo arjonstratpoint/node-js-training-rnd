@@ -31,6 +31,7 @@ The blueprint MUST:
   (title block → Learning Goals → Concept → Read These → Walkthrough(s) → "What This Walkthrough
   Showed You" → numbered EXERCISEs → Self-Check → Module Deliverable → Appendix answers).
 - Scope every step to producing or editing that file. No product code, no solution files.
+- Explicitly plan to show exact creation commands (`mkdir -p`, `touch`, `cat > ... << 'EOF' ... EOF`) with full sample content whenever files/directories are created.
 
 Structure the plan as numbered steps:
 

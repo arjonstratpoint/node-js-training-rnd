@@ -100,19 +100,19 @@ git config --global user.email "you@example.com"
 
 #### 2. Create the repo and the script
 
+Create the directory, initialize Git, and add the script:
+
 ```bash
-mkdir hello-node && cd hello-node
-git init
-```
-
-Create the `hello-node` script:
-
-```js
-// scripts/hello-node.js
+mkdir -p scripts
+touch scripts/hello-node.js
+cat > scripts/hello-node.js << 'EOF'
+#!/usr/bin/env node
 console.log('Hello, Node.js!');
+EOF
+chmod +x scripts/hello-node.js
+node scripts/hello-node.js
+# Hello, Node.js!
 ```
-
-Run it:
 
 ```bash
 node scripts/hello-node.js
@@ -290,7 +290,8 @@ not in the training content repo; link it from the header of your write-up.
 
 Create a `.gitignore` that covers the whole Node-project list, and a `.env.example`:
 
-```gitignore
+```bash
+cat > .gitignore << 'EOF'
 # .gitignore
 node_modules/
 .env
@@ -298,12 +299,15 @@ node_modules/
 prisma/generated/
 dist/
 coverage/
+EOF
 ```
 
 ```bash
+cat > .env.example << 'EOF'
 # .env.example — committed; a real .env is never committed
 # Copy to .env and fill in locally.
 PORT=3000
+EOF
 ```
 
 Commit the habit, not just the file:
