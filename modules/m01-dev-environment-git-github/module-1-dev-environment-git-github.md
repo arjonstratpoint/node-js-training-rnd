@@ -54,7 +54,8 @@ Two ideas make the collaboration work:
 
 ### Read These
 
-- 🔗 Git — Getting started / the basics: https://git-scm.com/book/en/v2/Getting-Started-Git-Basics
+- 🔗 Git — Git Basics: Getting a Git Repository:
+  https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository
 - 🔗 Git — Reset demystified (the definitive `reset` vs `revert` vs `restore` explainer):
   https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified
 - 🔗 Git — Rebasing (read it, even though this module only uses merge):
