@@ -8,7 +8,7 @@ asynchronous code.
 ## Setup
 
 - [ ] Read this stage's `brief.md` fully (and skim your m01 write-up) before starting.
-- [ ] Continue the branch → PR → peer review → merge habit from M01 for this lab's checkpoint.
+- [ ] Continue the branch → PR → merge habit from M01 for this lab's checkpoint.
 
 ## Research (do before or alongside the build, not after)
 

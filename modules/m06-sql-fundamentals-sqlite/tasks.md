@@ -9,7 +9,7 @@ Design a small relational schema and write the SQL needed to query it, before an
 - [ ] Read this stage's `brief.md` fully; have your M05 write-up on hand (you're replacing its
       in-memory store with this schema, then with Prisma in M07).
 - [ ] Install the `sqlite3` CLI or DB Browser for SQLite.
-- [ ] Continue the branch → PR → peer review → merge habit for this module's checkpoint.
+- [ ] Continue the branch → PR → merge habit for this module's checkpoint.
 
 ## Research
 
@@ -37,8 +37,7 @@ Design a small relational schema and write the SQL needed to query it, before an
       filtering/sorting/pagination, `INNER`/`LEFT` joins, aggregates with `GROUP BY`/`HAVING`, and
       at least one subquery.
 - [ ] Write at least one query inside an explicit transaction (`BEGIN`/`COMMIT`/`ROLLBACK`) — no
-      exercise strictly forces this, but you'll need the skill for real in the capstone (provided
-      separately by the trainer, in a separate repo).
+      exercise strictly forces this, but you'll need the skill for real in the M10 capstone.
 - [ ] Write a vulnerable, string-concatenated query and demonstrate a successful SQL injection
       against it.
 - [ ] Fix that same query with parameters and demonstrate the injection now fails.

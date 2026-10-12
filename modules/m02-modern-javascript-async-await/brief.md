@@ -5,7 +5,7 @@
 ## Builds on
 
 [m01-dev-environment-git-github](../m01-dev-environment-git-github/write-up-template.md) — you'll
-use the same branch → PR → review → merge habit for this lab's checkpoint.
+use the same branch → PR → merge habit for this lab's checkpoint.
 
 ## Objective
 

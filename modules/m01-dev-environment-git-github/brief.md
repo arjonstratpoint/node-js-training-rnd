@@ -35,8 +35,8 @@ conflict in its history.**
 
 ## Lab
 
-*Goal: prove you can take a change through the full branch → PR → review → merge cycle, including
-resolving a real conflict.*
+*Goal: prove you can take a change through the full branch → PR → merge cycle, including resolving
+a real conflict.*
 
 **You do.**
 
@@ -44,8 +44,9 @@ resolving a real conflict.*
 2. Write the `hello-node` script on a feature branch, committing with Conventional Commits as you
    go.
 3. Add `.gitignore` and `.env.example`.
-4. Open a pull request and get a peer review from your assigned partner.
-5. With your pair, deliberately create a merge conflict, then resolve it together.
+4. Open a pull request for that branch.
+5. Deliberately create a merge conflict (e.g. two of your own branches editing the same line), then
+   resolve it.
 6. Merge once the PR carries 3 or more Conventional Commits.
 
 **You build and capture.** The merged PR link, `.gitignore` and `.env.example` present in the repo,
@@ -57,8 +58,3 @@ and your own explanation of `git revert` vs `git reset`.
 - [ ] `.gitignore` present and covering the Node-project list above.
 - [ ] `.env.example` present (even though there's nothing to configure yet — this is about the habit).
 - [ ] You can narrate, in your own words, the difference between `git revert` and `git reset`.
-
-## Logistics
-
-- Your trainer assigns pairs for the merge-conflict exercise at the start of the session — this is a
-  per-cohort roster decision, not something this brief can fix in advance.

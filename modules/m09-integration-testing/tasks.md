@@ -13,7 +13,7 @@ database.
 - [ ] Create a separate `test.db` via `.env.test`, and confirm the transform works in ESM mode
       before writing any real tests — if `@swc/jest` doesn't cooperate with the Prisma-generated
       client, apply the brief's fallback order exactly, and record which one you needed.
-- [ ] Continue the branch → PR → peer review → merge habit for this Friday-gate submission.
+- [ ] Continue the branch → PR → merge habit for this Friday-gate submission.
 
 ## Research
 
@@ -69,6 +69,5 @@ database.
       `--randomize` run exposed.
 - [ ] "Checkpoint evidence": green CI on your PR, the suite passing with `--randomize`, your
       coverage report meeting 80%+, and `PATCH /tasks/:id/complete` added test-first.
-- [ ] Close out "What I'd do differently" — write this one especially carefully: the capstone that
-      follows is provided separately by the trainer, in a separate repo, and has no reference
-      material of its own except what you write here.
+- [ ] Close out "What I'd do differently" — write this one especially carefully, since the M10
+      capstone has no reference material except what you write here.

@@ -12,13 +12,13 @@ The repo you set up, the `hello-node` script, and the merged PR (link it).
 - Why did you structure your branches and commits the way you did?
 - The repo is public, by program convention — what would have changed if it had been private with
   a no-direct-push rule instead?
-- How did you and your pair actually resolve the merge conflict, and would a different approach
-  (merge vs rebase) have changed what happened?
+- How did you actually resolve the merge conflict, and would a different approach (merge vs rebase)
+  have changed what happened?
 
 ## How to build it (teach it to the next trainee)
 
-Write a guide to taking a change through branch → PR → review → merge, including a real conflict,
-using your own example to show the reasoning, not just the Git commands.
+Write a guide to taking a change through branch → PR → merge, including a real conflict, using your
+own example to show the reasoning, not just the Git commands.
 
 ## Concepts worth explaining
 

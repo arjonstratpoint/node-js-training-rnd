@@ -13,7 +13,7 @@ Express API.
       both to `^7` in `package.json` from the start.
 - [ ] Run `npx prisma@7 init` and confirm the datasource URL lives in the right config file for
       your Prisma version (`prisma7.config.ts`, or `prisma.config.ts` pre-7.10).
-- [ ] Continue the branch → PR → peer review → merge habit for this module's checkpoint.
+- [ ] Continue the branch → PR → merge habit for this module's checkpoint.
 
 ## Research
 
