@@ -24,8 +24,9 @@
 - Use the everyday commands: `init`, `clone`, `status`, `add`, `commit`, `log`, `diff`,
   `restore`, `stash`.
 - Tell `git revert` apart from `git reset`, and know when each is safe.
-- Create a branch, open a pull request, get a peer review, and merge it.
-- Create and resolve a real merge conflict, and explain merge vs rebase conceptually.
+- Take a change through the full cycle yourself: create a branch, open a pull request, and merge it.
+- Create and resolve a real merge conflict on your own branches, and explain merge vs rebase
+  conceptually.
 - Write a `.gitignore` and `.env.example` for a Node project — and never commit secrets.
 
 ### Concept
@@ -45,9 +46,8 @@ just not knowing where your change currently is.
 
 Branches are cheap: a branch is a movable pointer to a commit, not a copy of the files. That is
 why the workflow you will learn here is *always branch first*. You do work on a **feature branch**,
-open a **pull request** to propose merging it, get a **review**, then **merge** it. This is
-**GitHub Flow**, and it is the shape of every module in this program: feature branch → PR →
-Conventional Commits → review → merge.
+open a **pull request** to propose merging it, then **merge** it. This is **GitHub Flow**, and it is
+the shape of every module in this program: feature branch → PR → Conventional Commits → merge.
 
 Two ideas make the collaboration work:
 
@@ -152,7 +152,7 @@ git remote add origin git@github.com:<you>/<repo>.git
 git push -u origin main
 ```
 
-### Walkthrough Part 2: Branch → PR → Review → Merge
+### Walkthrough Part 2: Branch → PR → Merge
 
 #### 1. Branch before you type
 
@@ -177,23 +177,33 @@ git push -u origin feat/greeting
 gh pr create --fill        # or use the pull/new/<branch> URL GitHub prints
 ```
 
-Open it as a **draft** if you are still working — review can start before you are done.
+Open it as a **draft** if you are still working — that keeps the PR from being merged before it is
+ready.
 
-#### 4. Get the review
+#### 4. Self-review the diff before you merge
 
-Your partner comments on the diff. Respond or push fixes as **new commits** — never force-push
-over review feedback. Each review response is itself a commit, so the conversation stays legible.
+You are the author and the reviewer here. Read your own diff the way a reviewer would, one concern
+at a time:
+
+```bash
+git fetch origin
+git diff main...HEAD        # everything this branch adds, against main
+git log --oneline main..HEAD # the commits the PR will contribute
+```
+
+If something is wrong, fix it and push it as a **new commit** — never force-push. Each fix is
+itself a commit, so the story of the branch stays legible.
 
 #### 5. Leave the PR open — the conflict drill comes next
 
-Do **not** merge yet. Part 3 uses this same feature branch to create and resolve a real conflict,
-and the merge happens once that resolution is part of the PR. Keeping the branch open is exactly
-what puts the conflict — and its resolution — *inside* the PR's history.
+Do **not** merge yet. Part 3 will create and resolve a real conflict on this feature branch, and the
+merge happens once that resolution is part of the PR. Keeping the branch open is exactly what puts
+the conflict — and its resolution — *inside* the PR's history.
 
 ### Walkthrough Part 3: Create and Resolve a Conflict
 
-A conflict is not a failure; it is Git refusing to guess. Do this **with your pair**, before
-merge, so the clash is visible in history.
+A conflict is not a failure; it is Git refusing to guess. Create it **yourself**, on two of your own
+branches, before merge, so the clash is visible in history:
 
 ```bash
 git checkout -b conflict-alternate feat/greeting
@@ -220,11 +230,11 @@ console.log('Hello, Node!');
 >>>>>>> conflict-alternate
 ```
 
-Read them: top is **yours** (`HEAD`), bottom is **theirs**, `=======` splits the two. Editing the
-file to combine both intents:
+Read them: top is **yours** (`HEAD`), bottom is **theirs**, `=======` splits the two. Edit the file
+so it combines both intents into the greeting you actually want:
 
 ```js
-console.log('Hello, Node.js! (from the pair programming session)');
+console.log('Hello, Node.js! (resolved after a real merge conflict)');
 ```
 
 Then delete every marker, stage, and commit the resolution:
@@ -241,7 +251,7 @@ Push the resolution onto the same feature branch — the open PR updates automat
 git push
 ```
 
-Get the review sign-off, then merge.
+Self-check the diff once more, then merge.
 
 #### Merge — with a merge commit
 
@@ -373,7 +383,7 @@ Do the loop once more, driven by a GitHub Issue:
    `hello-node`").
 2. Create a feature branch and make the change in **two or more** Conventional Commits.
 3. Open a PR that references the issue (`Closes #<n>`).
-4. Get a peer review from your assigned partner — respond with new commits.
+4. Self-review the diff; if it needs changes, push them as new commits.
 5. Merge with a **merge commit**. Confirm the Issue closed and the commits survived.
 
 ### Self-Check
