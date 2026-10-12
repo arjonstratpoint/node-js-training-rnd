@@ -11,7 +11,7 @@ with npm.
       patterns).
 - [ ] Get the synthetic ~100MB log file from your trainer (generator script or download link)
       before starting the CLI lab.
-- [ ] Continue the branch → PR → peer review → merge habit for this module's Friday-gate
+- [ ] Continue the branch → PR → merge habit for this module's Friday-gate
       submission.
 
 ## Research (do before or alongside the build, not after)

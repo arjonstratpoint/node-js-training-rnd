@@ -11,7 +11,7 @@ Node.js.
       write-up, on hand.
 - [ ] Confirm your local Node version matches the cohort's pinned Node 24 LTS (`.nvmrc`) and install
       `@types/node@24`.
-- [ ] Continue the branch → PR → peer review → merge habit for this module.
+- [ ] Continue the branch → PR → merge habit for this module.
 
 ## Research — core TypeScript
 

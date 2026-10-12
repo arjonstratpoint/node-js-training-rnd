@@ -10,7 +10,7 @@ schemas.
 - [ ] Read this stage's `brief.md` fully; have your M05 (error envelope + validation) and M07
       (Prisma types) write-ups on hand.
 - [ ] Install `zod@4`.
-- [ ] Continue the branch → PR → peer review → merge habit for this Friday-gate submission.
+- [ ] Continue the branch → PR → merge habit for this Friday-gate submission.
 
 ## Research
 

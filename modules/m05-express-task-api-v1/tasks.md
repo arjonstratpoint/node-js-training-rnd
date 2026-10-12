@@ -12,7 +12,7 @@ Build a well-structured REST API with Express 5 in TypeScript, with a consistent
       + field/scope spec).
 - [ ] Confirm `@types/express` is installed and your project still type-checks under M04's
       `tsconfig.json`.
-- [ ] Continue the branch → PR → peer review → merge habit for this Friday-gate submission.
+- [ ] Continue the branch → PR → merge habit for this Friday-gate submission.
 
 ## Research
 
