@@ -51,6 +51,10 @@ Then confirm by reading the artifact:
 - **Structure is intact** — headings follow the reference order, every EXERCISE number is present,
   and every Self-Check question has an Appendix answer.
 
+Also test the module's `modules/<module-folder>/write-up-template.md`: every template question has a
+concrete answer, its title and description are byte-for-byte unchanged, and no separate `write-up.md`
+or variant was created. Apply the same URL/command consistency checks to it.
+
 A dead URL or a command a learner cannot run is a BLOCKER — being followable *is* the artifact's
 job. Classify any failure in step 4.
 
@@ -63,6 +67,8 @@ First check the output-artifact criteria (these always apply):
 [ ] Mirrors docs/reference/module-6-express-basics.docx section-for-section
 [ ] Instructional material only — no product code, no solution files, no planning
 [ ] Every URL resolves (HTTP 2xx) and every command is internally consistent — proven in step 2
+[ ] The module's write-up-template.md is filled in as a worked example — its title/description are
+    unchanged, its questions are answered in place, and no separate write-up.md (or variant) exists
 ```
 
 Then load any task-specific acceptance criteria from the CSV task (or EVALUATE summary). For each

@@ -22,6 +22,10 @@ A plan must be approved. If `/plan` has not run and been approved, stop and ask.
   fenced code block(s) so the learner can copy-paste and run them end to end.
 - If that file already exists, edit it in place; do not create a second copy or a differently
   named variant.
+- Also fill in the module's `modules/<module-folder>/write-up-template.md` as a **worked example**:
+  answer its own questions in place, and leave its existing title and description unchanged. Do
+  **not** create a separate `write-up.md` or any differently named variant. Repo/code links belong
+  in the "What I built" section. Report it under **Modified** in the APPLY COMPLETE summary.
 
 ### 2 — The knowledge graph stays current automatically
 

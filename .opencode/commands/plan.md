@@ -27,6 +27,9 @@ The blueprint MUST:
 
 - Name that exact target path and list it under **Files created** (or **Files modified** if it
   already exists — plan to edit, never to duplicate).
+- Also name `modules/<module-folder>/write-up-template.md` and list it under **Files modified** —
+  the plan must scope filling it in as a worked example (answer the template's own questions in
+  place, keep its title/description unchanged, and create no separate `write-up.md` or variant).
 - Lay out the section order to mirror `docs/reference/module-6-express-basics.docx`
   (title block → Learning Goals → Concept → Read These → Walkthrough(s) → "What This Walkthrough
   Showed You" → numbered EXERCISEs → Self-Check → Module Deliverable → Appendix answers).
@@ -39,6 +42,7 @@ Structure the plan as numbered steps:
 PLAN
 ────
 Output artifact: modules/<folder>/module-<no.>-<title>.md
+Write-up:       modules/<folder>/write-up-template.md  (filled in as a worked example)
 1. <file or module> — <what changes and why>
 2. <file or module> — <what changes and why>
 ...

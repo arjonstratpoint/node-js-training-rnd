@@ -28,8 +28,9 @@ Note which communities/symbols and high-degree nodes are in the blast radius.
 
 ### 3 — Fix the output artifact (always this shape)
 
-Every task in this repo produces **one Markdown file of instructional material** that a developer
-can follow and test end to end. It is never code, never a plan, and never the brief or checklist.
+Every task in this repo produces **two Markdown files**: the module's instructional guide (which a
+developer can follow and test end to end) and that same module's **filled-in write-up**. Neither is
+code, a plan, the brief, or the checklist.
 
 - **Location and name:** inside the module's own folder, as
   `modules/<module-folder>/module-<module-no.>-<module-title>.md`
@@ -46,6 +47,11 @@ can follow and test end to end. It is never code, never a plan, and never the br
   executes and tests, plus exercises and self-checks. No solution files, no product code, no
   planning. Require that any step creating files/directories includes the exact terminal
   commands (`mkdir -p`, `touch`, `cat > ... << 'EOF' ... EOF`) with the full sample content.
+- **Second artifact — the stage write-up.** Also fill in that module's
+  `modules/<module-folder>/write-up-template.md` as a **worked example**: answer the template's own
+  questions in place, and leave its existing title and description unchanged. Do **not** create a
+  separate `write-up.md` or any differently named variant. Repo/code links belong in the "What I
+  built" section.
 - If the target file already exists, EVALUATE treats it as the artifact to review or extend — not
   a source to copy from.
 
@@ -56,6 +62,7 @@ EVALUATE SUMMARY
 ────────────────
 Task:        <what we are building — instructional material for module M??>
 Output:      modules/<folder>/module-<no.>-<title>.md  (mirrors the reference docx)
+Write-up:    modules/<folder>/write-up-template.md  (filled in as a worked example)
 Touches:     <files / modules / graph communities or symbols>
 Depends on:  <what must already exist>
 Constraints: <from AGENTS.md, arch doc, acceptance criteria>
