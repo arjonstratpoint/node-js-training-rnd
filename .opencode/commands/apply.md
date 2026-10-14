@@ -26,6 +26,11 @@ A plan must be approved. If `/plan` has not run and been approved, stop and ask.
   answer its own questions in place, and leave its existing title and description unchanged. Do
   **not** create a separate `write-up.md` or any differently named variant. Repo/code links belong
   in the "What I built" section. Report it under **Modified** in the APPLY COMPLETE summary.
+- Update the module's `modules/<module-folder>/tasks.md` in place: change `[ ]` to `[x]` only for
+  items the work actually satisfies, each with a one-line evidence note (PR/commit link, file path,
+  or command output). Leave every other item untouched, and preserve the existing headings, section
+  order, and checkbox syntax. Do **not** generate the file if it is missing — stop and flag it.
+  Report it under **Modified** in the APPLY COMPLETE summary.
 
 ### 2 — The knowledge graph stays current automatically
 

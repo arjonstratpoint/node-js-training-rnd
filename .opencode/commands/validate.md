@@ -55,6 +55,12 @@ Also test the module's `modules/<module-folder>/write-up-template.md`: every tem
 concrete answer, its title and description are byte-for-byte unchanged, and no separate `write-up.md`
 or variant was created. Apply the same URL/command consistency checks to it.
 
+Then test the module's `modules/<module-folder>/tasks.md` as the **baseline checklist**: every
+`[x]` item is backed by real evidence (a resolvable PR/commit link, an existing file, or a command
+that has run), every unticked `[ ]` item is genuinely not done yet, the headings/section order are
+unchanged from the generated version, and no item was silently added, removed, or reworded. Every
+Verify item must trace to a concrete artifact — an untraceable `[x]` is a BLOCKER.
+
 A dead URL or a command a learner cannot run is a BLOCKER — being followable *is* the artifact's
 job. Classify any failure in step 4.
 
@@ -69,6 +75,8 @@ First check the output-artifact criteria (these always apply):
 [ ] Every URL resolves (HTTP 2xx) and every command is internally consistent — proven in step 2
 [ ] The module's write-up-template.md is filled in as a worked example — its title/description are
     unchanged, its questions are answered in place, and no separate write-up.md (or variant) exists
+[ ] The module's tasks.md is updated in place — completed items ticked with evidence, structure
+    preserved, and no item added, removed, or reworded
 ```
 
 Then load any task-specific acceptance criteria from the CSV task (or EVALUATE summary). For each
