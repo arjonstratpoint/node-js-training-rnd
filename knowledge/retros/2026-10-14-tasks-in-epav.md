@@ -24,3 +24,9 @@
   `/trainee-task-planner`", but the actual command file is `/dev-tasks-planner`
   (`.opencode/commands/dev-tasks-planner.md`). Deferred: align the README wording (or add an alias)
   so the two names do not diverge further.
+- **Bundled checklist items.** m03's Write-up "Checkpoint evidence" item bundles a merged-PR claim
+  (the unresolved worked-example `pull/3`) with the CLI memory numbers and the server's `curl`
+  responses. It was ticked because the write-up section exists and carries the concrete evidence,
+  with the broken PR link called out inline — while the standalone Verify "merged via PR" item stays
+  unticked. Rule of thumb going forward: when one item bundles independent claims, tick only if the
+  actionable part is satisfied and name any unresolved sub-claim inline.
