@@ -51,3 +51,17 @@ If any output differs from the guide, the guide is wrong — fix the guide, not 
 - **Do not put `// @ts-expect-error` on a line whose error you quote to the learner** — the directive
   suppresses exactly that error, so the learner sees nothing. Reserve `@ts-expect-error` for pinning
   a deliberate wrong snippet *after* the error has been explained, and say so.
+
+## Related gotcha (M09, 2026-10-20)
+
+- **Jest `globalSetup` must export a function from the very first run.** A guide that writes
+  `jest.config.js` (pointing at `global-setup.ts`) before Walkthrough 2 creates the setup files
+  cannot tell the learner to `touch` empty placeholders — Jest aborts with a load error before any
+  test runs. Ship minimal *functional* stubs in the setup walkthrough (`export default async
+  function globalSetup(): Promise<void> {}`, plus the env loader with `??` defaults) and let the
+  later walkthrough overwrite them with the explained version. Syntax-check heredocs with
+  `node --check` (for `.js`, write as `.mjs`) and `npx esbuild` (for `.ts`) — both catch the
+  bracket-typo class of error (`globalSetup: '…'],`) that `bash -n` cannot.
+- **`www.npmjs.com` returns HTTP 403 to `curl`/CI clients while serving browsers fine** (bot/edge
+  blocking). The URL-check gate counts that as a failure, so prefer the package's `github.com`
+  canonical repo link in Read-These sections; keep npm URLs only in prose where no check runs.
